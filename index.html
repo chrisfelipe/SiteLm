@@ -13,17 +13,21 @@
         color: white;
     }
     .row a:hover{
-      color: yellow;
+      
+    }
+    .col li a{
+      color: black;
     }
 
 </style>
 </head>
 
 <body>
+  <div class="container-fluid" style="background-color:black ; color: yellow; text-align: center;"><h5>CATÁLOGO LM</h5></div>
    <!--Inicio do menu superior--> 
 <div class="container-fluid">
     <div class="navbar">
-        <div class="col-2"><img src="assets/imgs/logo.jpg" alt=""></div>
+        <div class="col-2"><a href=""><img src="assets/imgs/logo.jpg" alt="" onclick="teste()"></a></div>
         <div class="col-6"> 
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Busque" aria-label="Search" >
@@ -38,11 +42,51 @@
 <!--Inico Menu categorias-->
 <div class="container-fluid" style="background-color: black;">
     <div class="row">
-        <div class="col" style="text-align:center ;"><a href="">Todos os itens</a></div>
-        <div class="col" style="text-align:center ;"><a href="">Vestido</a></div>
-        <div class="col" style="text-align:center ;"><a href="">Blusa</a></div>
-        <div class="col" style="text-align:center ;"><a href="">Saia/Short</a></div>
-        <div class="col" style="text-align:center ;"><a href="">Categorias</a></div>
+        <div class="col dropdown" style="text-align:center ; "><a class="btn btn-secondary dropdown-toggle" style="background-color: yellow;color: black;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Feminino</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: white;">
+            <li><a class="dropdown-item" href="#" style="color: black;">Blusas</a></li>
+            <li><a class="dropdown-item" href="#">Calças</a></li>
+            <li><a class="dropdown-item" href="#">Conjuntos</a></li>
+            <li><a class="dropdown-item" href="#">Macacão/Macaquinho</a></li>
+            <li><a class="dropdown-item" href="#">Short/Saia</a></li>
+            <li><a class="dropdown-item" href="#">Vestidos</a></li>
+          </ul>
+        </div>
+
+        <div class="col dropdown" style="text-align:center ; "><a class="btn btn-secondary dropdown-toggle" style="background-color: yellow;color: black;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Masculino</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: white;">
+            <li><a class="dropdown-item" href="#" style="color: black;">Calças</a></li>
+            <li><a class="dropdown-item" href="#">Camisas</a></li>
+            <li><a class="dropdown-item" href="#">Bermudas</a></li>
+            <li><a class="dropdown-item" href="#">Social</a></li>
+          </ul>
+        </div>
+        <div class="col dropdown" style="text-align:center ; "><a class="btn btn-secondary dropdown-toggle" style="background-color: yellow;color: black;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Plus Size</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: white;">
+            <li><a class="dropdown-item" href="#" style="color: black;">Blusas</a></li>
+            <li><a class="dropdown-item" href="#">Calças</a></li>
+            <li><a class="dropdown-item" href="#">Conjuntos</a></li>
+            <li><a class="dropdown-item" href="#">Macacão/Macaquinho</a></li>
+            <li><a class="dropdown-item" href="#">Short/Saia</a></li>
+            <li><a class="dropdown-item" href="#">Vestidos</a></li>
+          </ul>
+        </div>
+        <div class="col dropdown" style="text-align:center ; "><a class="btn btn-secondary dropdown-toggle" style="background-color: yellow;color: black;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Acessórios</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: white;">
+            <li><a class="dropdown-item" href="#" style="color: black;">Cintos</a></li>
+            <li><a class="dropdown-item" href="#">Cuecas</a></li>
+            <li><a class="dropdown-item" href="#">Biquinis</a></li>
+            <li><a class="dropdown-item" href="#">Gravatas</a></li>
+          </ul>
+        </div>
+        <div class="col dropdown" style="text-align:center ; "><a class="btn btn-secondary dropdown-toggle" style="background-color: yellow;color: black;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Coleções</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: white;">
+            <li><a class="dropdown-item" href="#" style="color: black;">Fitness</a></li>
+            <li><a class="dropdown-item" href="#">Inverno</a></li>
+            <li><a class="dropdown-item" href="#">Verão</a></li>
+            
+          </ul>
+        </div>
     </div>
 </div>
 <!--Fim do Menu categorias-->
@@ -74,6 +118,14 @@
     </button>
   </div>
 <!--fim do modal-->
+<div class="container-fluid" style="height:100px ;">
+<div class="row">
+  <div class="col">a</div>
+  <div class="col">b</div>
+  <div class="col">b</div>
+</div>
+
+</div>
 <!--inicio da section-->
 <div class="container-fluid" style=" text-align: center; background-color: black; color:white ;" >
     <h2 class="section-header__title">
@@ -82,6 +134,30 @@
     </h2>
 </div>
 </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm"><img src="assets/imgs/a.jpeg" alt=""></div>
+    <div class="col-sm"><img src="assets/imgs/b.jpeg" alt="" srcset=""></div>
+    <div class="col-sm"><img src="assets/imgs/c.jpeg" alt=""></div>
+  </div>
+</div>
+<div class="container-fluid" style="margin-top: 50px;">
+  <div class="row">
+    <div class="col-sm"><img src="assets/imgs/d.jpeg" alt="">
+    </div>
+    <div class="col-sm"><img src="assets/imgs/e.jpeg" alt="" srcset=""></div>
+    <div class="col-sm"><img src="assets/imgs/f.jpeg" alt=""></div>
+  </div>
+</div>
+<div class="container-fluid" style="margin-top: 50px;">
+  <div class="row">
+    <div class="col-sm"><img src="assets/imgs/g.jpeg" alt="">
+    </div>
+    <div class="col-sm"><img src="assets/imgs/h.jpeg" alt="" srcset=""></div>
+    <div class="col-sm"><img src="assets/imgs/z.jpeg" alt=""></div>
+  </div>
+</div>
+
 
 
 
