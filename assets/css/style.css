@@ -1,0 +1,19 @@
+.galery {
+    width: 950px;
+    height: 900px;
+    overflow: hidden;
+    margin: auto;
+    
+    
+}
+
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+    width: 19.9%;
+}
